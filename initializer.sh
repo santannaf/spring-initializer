@@ -15,7 +15,7 @@ curl https://start.spring.io/starter.zip -d dependencies=web \
 # Descompacta o projeto
 echo "Descompactando o arquivo '$arquivo'..."
 mkdir $1 && unzip -q "$arquivo" -d $1 && chmod 777 ./$1
-git 
+
 echo "Criando módulos básicos ..."
 moduleRest="./$1/$1-rest-api/src/main/$language/"
 moduleRestResource="./$1/$1-rest-api/src/main/resources/"
